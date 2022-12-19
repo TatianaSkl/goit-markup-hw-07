@@ -1,0 +1,13 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  &__logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
+}
+header .container {
+  display: flex;
+  align-items: center;
+}

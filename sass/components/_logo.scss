@@ -1,0 +1,18 @@
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  @include font(26, 1.19);
+  color: $accent-link-color;
+  @extend %link;
+  &__span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    @include font(26, 1.19);
+    &--black-color {
+      color: #000000;
+    }
+  }
+  &__span--white-color {
+    color: $primary-color;
+  }
+}

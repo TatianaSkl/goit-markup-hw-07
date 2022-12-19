@@ -1,0 +1,31 @@
+.features {
+  @extend %section;
+  &__list {
+    display: flex;
+    @extend %list;
+  }
+  &__items {
+    flex-basis: calc((100% - 90px) / 4);
+    justify-content: center;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__icon {
+    @include flex();
+    background: #f5f4fa;
+    border-radius: 4px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+  &__title {
+    margin-bottom: 10px;
+    @include font();
+    text-transform: uppercase;
+  }
+  &__text {
+    @include font($lh: 1.71);
+    color: $additional-color;
+  }
+}

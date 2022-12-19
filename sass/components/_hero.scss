@@ -1,0 +1,35 @@
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  padding: 200px 0px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @extend %section;
+  &__title {
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    @include font(44, 1.36, 0.06);
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-color;
+  }
+}
+.hero__btn {
+  padding: 10px 24px;
+  background-color: $accent-link-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-link-color;
+  }
+  @extend %btn;
+}

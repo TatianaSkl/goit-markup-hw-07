@@ -1,0 +1,41 @@
+.team {
+  background-color: #f5f4fa;
+  @extend %section;
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+    @extend %title;
+  }
+  &__list {
+    display: flex;
+    @extend %list;
+  }
+  &__name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    @include font($fs: 16, $lh: 1.19);
+    text-align: center;
+  }
+  &__profession {
+    margin-bottom: 16px;
+
+    @include font($fs: 16, $lh: 1.19);
+    text-align: center;
+    color: $additional-color;
+  }
+  &__social {
+    margin-bottom: 30px;
+  }
+}
+.team__items {
+  flex-basis: calc((100% - 90px) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $primary-color;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
